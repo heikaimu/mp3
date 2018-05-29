@@ -4,6 +4,20 @@
 	<title>音频</title>
 </head>
 <body>
-<audio src="http://p09vugqdu.bkt.clouddn.com/sound.ogg" controls="controls"></audio>
+	<audio controls="controls" id="audio" autoplay="autoplay">
+      <source src="http://p09vugqdu.bkt.clouddn.com/sound.ogg" type="audio/mpeg">
+    </audio>
+<script>
+	
+var toFlag = 1;
+function toggleSound() {
+    var music = document.getElementById("audio");
+    if (music.paused && toFlag == 1) { 
+        music.play(); 
+        toFlag = 0;
+    } 
+}
+	toggleSound();
+	</script>
 </body>
 </html>
