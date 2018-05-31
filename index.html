@@ -4,20 +4,7 @@
 	<title>音频</title>
 </head>
 <body>
-	<audio controls="controls" id="audio" autoplay="autoplay">
-      <source src="http://p09vugqdu.bkt.clouddn.com/test.mp4" type="audio/mpeg">
+	<audio src="http://p09vugqdu.bkt.clouddn.com/test.mp4" controls="controls" autoplay="autoplay">
     </audio>
-<script>
-	
-var toFlag = 1;
-function toggleSound() {
-    var music = document.getElementById("audio");
-    if (music.paused && toFlag == 1) { 
-        music.play(); 
-        toFlag = 0;
-    } 
-}
-	toggleSound();
-	</script>
 </body>
 </html>
